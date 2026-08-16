@@ -20,9 +20,9 @@ cask "sidescreen" do
 
   caveats <<~EOS
     Side Screen is not notarized yet. If macOS blocks the first launch,
-    install with:
-      brew install --cask --no-quarantine sidescreen
-    or clear the quarantine flag after installing:
-      xattr -cr /Applications/SideScreen.app
+    clear the quarantine flag:
+      xattr -cr "#{appdir}/SideScreen.app"
+    or reinstall without it:
+      brew reinstall --cask --no-quarantine sidescreen
   EOS
 end

@@ -15,10 +15,10 @@ yet). If you installed without it and macOS blocks the first launch:
 xattr -cr /Applications/SideScreen.app
 ```
 
-Upgrade later with:
+Upgrade later with (`--no-quarantine` again — upgrades re-apply the flag):
 
 ```bash
-brew upgrade --cask sidescreen
+brew upgrade --cask --no-quarantine sidescreen
 ```
 
 The Android APK is on the [releases page](https://github.com/tranvuongquocdat/SideScreen/releases).
