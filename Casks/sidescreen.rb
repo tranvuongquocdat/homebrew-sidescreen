@@ -1,6 +1,6 @@
 cask "sidescreen" do
-  version "0.11.1"
-  sha256 "8eb872ddaea3099d5269d5d837b06549acc3faf3160b53cdc005330744fe298b"
+  version "0.11.2"
+  sha256 "ba5e8e8ddbe49389a02e66cf40bcef9a4e166f289f50fa9c46ffebe141f5cb43"
 
   url "https://github.com/tranvuongquocdat/SideScreen/releases/download/#{version}/SideScreen-#{version}-mac-universal.dmg"
   name "Side Screen"
