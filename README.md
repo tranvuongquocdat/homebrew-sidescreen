@@ -8,6 +8,9 @@ brew tap tranvuongquocdat/sidescreen
 brew install --cask --no-quarantine sidescreen
 ```
 
+Recent Homebrew versions ask you to trust third-party taps once — confirm the
+prompt, or run `brew trust tranvuongquocdat/sidescreen` first.
+
 `--no-quarantine` skips Gatekeeper's quarantine flag (the app is not notarized
 yet). If you installed without it and macOS blocks the first launch:
 
