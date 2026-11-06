@@ -17,11 +17,4 @@ cask "sidescreen" do
   app "SideScreen.app"
 
   zap trash: "~/Library/Preferences/com.sidescreen.app.plist"
-
-    Side Screen is not notarized yet. If macOS blocks the first launch,
-    clear the quarantine flag:
-      xattr -cr "#{appdir}/SideScreen.app"
-    or reinstall without it:
-      brew reinstall --cask --no-quarantine sidescreen
-  EOS
 end
