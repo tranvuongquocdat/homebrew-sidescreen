@@ -1,6 +1,6 @@
 cask "sidescreen" do
-  version "1.0.2"
-  sha256 "da3fa5a8b0ef61c088c3618b6529fa4a8375ef6a0e18adde4020615a2313d35d"
+  version "1.1.0"
+  sha256 "f9d5caf15f6e1dfffe8ecf3a691aad03cc5efac2facaaff3a70d8252affbf075"
 
   url "https://github.com/tranvuongquocdat/SideScreen/releases/download/#{version}/SideScreen-#{version}-mac-universal.dmg"
   name "Side Screen"
@@ -18,7 +18,6 @@ cask "sidescreen" do
 
   zap trash: "~/Library/Preferences/com.sidescreen.app.plist"
 
-  caveats <<~EOS
     Side Screen is not notarized yet. If macOS blocks the first launch,
     clear the quarantine flag:
       xattr -cr "#{appdir}/SideScreen.app"
